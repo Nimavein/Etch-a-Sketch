@@ -4,7 +4,10 @@ function getNumbers() {
     container.innerHTML = "";
     let colsNumber = document.getElementById("cols-input").value;
     let rowsNumber = document.getElementById("rows-input").value;
-    createGrid(rowsNumber,colsNumber);
+    if (colsNumber < 101 && colsNumber > 0 && rowsNumber < 101 && rowsNumber > 0) {
+        createGrid(rowsNumber,colsNumber);
+    }
+    
 }
 
 
